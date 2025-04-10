@@ -1,0 +1,3 @@
+/home/igor/MeuProjetoChai3d/build/CMakeFiles/MeuProjetoChai3D.dir
+/home/igor/MeuProjetoChai3d/build/CMakeFiles/edit_cache.dir
+/home/igor/MeuProjetoChai3d/build/CMakeFiles/rebuild_cache.dir

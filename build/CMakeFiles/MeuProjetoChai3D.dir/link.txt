@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.o -o MeuProjetoChai3D  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/lib/release/lin-x86_64-cc/libchai3d.a -lglfw /usr/lib/x86_64-linux-gnu/libGLEW.so -lGL -lGLU -lX11 -lpthread -ldl 
