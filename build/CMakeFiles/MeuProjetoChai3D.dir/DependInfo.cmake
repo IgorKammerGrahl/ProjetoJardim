@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/igor/MeuProjetoChai3d/src/haptics.cpp" "CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o" "gcc" "CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o.d"
   "/home/igor/MeuProjetoChai3d/src/main.cpp" "CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.o" "gcc" "CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.o.d"
   )
 

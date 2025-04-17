@@ -129,6 +129,30 @@ MeuProjetoChai3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/build
 .PHONY : MeuProjetoChai3D/fast
 
+src/haptics.o: src/haptics.cpp.o
+.PHONY : src/haptics.o
+
+# target to build an object file
+src/haptics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o
+.PHONY : src/haptics.cpp.o
+
+src/haptics.i: src/haptics.cpp.i
+.PHONY : src/haptics.i
+
+# target to preprocess a source file
+src/haptics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.i
+.PHONY : src/haptics.cpp.i
+
+src/haptics.s: src/haptics.cpp.s
+.PHONY : src/haptics.s
+
+# target to generate assembly for a file
+src/haptics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.s
+.PHONY : src/haptics.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MeuProjetoChai3D"
+	@echo "... src/haptics.o"
+	@echo "... src/haptics.i"
+	@echo "... src/haptics.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

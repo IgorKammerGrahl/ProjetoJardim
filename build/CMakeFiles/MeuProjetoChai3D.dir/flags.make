@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src -I/home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen
+CXX_INCLUDES = -I/home/igor/sdk-3.17.6/include -I/home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src -I/home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen -I/home/igor/MeuProjetoChai3d/src -I/usr/include/libusb-1.0
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++11 -Wno-ignored-attributes -Wno-deprecated-declarations
 

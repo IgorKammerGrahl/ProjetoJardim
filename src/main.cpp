@@ -6,123 +6,151 @@
 #include <GL/glew.h>
 
 #include <iostream>
-#include "chai3d.h" // Header principal do CHAI3D
+#include <chrono>
+#include <thread>
+#include "chai3d.h" // Inclui a maioria das classes CHAI3D, como cShapeSphere
+#include "lighting/CPositionalLight.h" // Para a luz
+#include "haptics.h" // Nosso código háptico
 
-// 3. Incluir header específico da LUZ POSICIONAL
-#include "lighting/CPositionalLight.h" // <--- CORRIGIDO
-
-// Use namespaces se preferir, ou use chai3d:: explicitamente
+// Use namespaces se preferir
 using namespace chai3d;
 // using namespace std; // Opcional
 
 int main(int argc, char* argv[]) {
-    // ... (código de inicialização GLFW, GLEW igual a antes) ...
-    // Inicializar GLFW
+
+    // ****** Fator de Escala REATIVADO ******
+    // Ajuste este valor PEQUENO (ex: 2.0 a 5.0) para equilibrar
+    // liberdade visual e sincronia com o háptico.
+    const double workspaceScaleFactor = 3.0; // Ou outro valor que você prefira
+    // **************************************
+
+    // --- Inicialização GLFW e GLEW ---
     if (!glfwInit()) {
         std::cerr << "Erro ao inicializar GLFW" << std::endl;
         return -1;
     }
-
-    // Configurar GLFW para OpenGL 2.1 (Compatível com CHAI3D 3.2.0) - CORRETO!
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_ANY_PROFILE); // Use ANY ou COMPATIBILITY
-
-    // Criar janela
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Meu Projeto CHAI3D", NULL, NULL);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_ANY_PROFILE);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Jardim Sensorial Virtual (CHAI3D + Falcon)", NULL, NULL);
     if (!window) {
         std::cerr << "Erro ao criar janela GLFW" << std::endl;
         glfwTerminate();
         return -1;
     }
-
-    // Contexto OpenGL - PRECISA VIR ANTES DE glewInit()!
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1); // Opcional: Habilita V-Sync
-
-    // Inicializar GLEW - PRECISA VIR DEPOIS de MakeContextCurrent!
-    // glewExperimental = GL_TRUE; // Pode ser necessário, mas tente sem primeiro
+    glfwSwapInterval(1); // V-Sync
     if (glewInit() != GLEW_OK) {
         std::cerr << "Erro ao inicializar GLEW" << std::endl;
-        glfwDestroyWindow(window); // Limpeza parcial em caso de erro
+        glfwDestroyWindow(window);
         glfwTerminate();
         return -1;
     }
-
-    // Imprimir versão OpenGL para depuração (opcional)
     std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
 
 
     // --- Configuração CHAI3D ---
-
-    // Criar mundo e câmera
     cWorld* world = new cWorld();
     cCamera* camera = new cCamera(world);
-    world->addChild(camera); // Adiciona a câmera ao mundo
-
-    // Posicionar câmera (API CORRETA para 3.2.0)
-    camera->set( cVector3d(3.0, 0.0, 0.0),    // Posição da câmera (olhando para a origem)
-                cVector3d(0.0, 0.0, 0.0),    // Ponto para onde a câmera olha (lookAt)
-                cVector3d(0.0, 0.0, 1.0) );  // Vetor 'up' (Z aponta para cima)
-
-    // Configurar projeção (MÉTODOS CORRETOS para 3.2.0)
-    camera->setFieldViewAngleDeg(45.0);       // Campo de visão vertical (implica perspectiva)
-    camera->setClippingPlanes(0.01, 100.0);   // Planos near/far
-    // camera->setPerspectiveMode(); // <-- Certifique-se que esta linha FOI REMOVIDA!
-
-    // Criar e adicionar esfera vermelha
-    cShapeSphere* sphere = new cShapeSphere(0.5); // Raio 0.5
-    sphere->m_material->setRedFireBrick();
-    world->addChild(sphere); // Adiciona a esfera ao mundo
-
-    // Adicionar uma luz POSICIONAL (importante para visualização)
-    cPositionalLight* light = new cPositionalLight(world); // <--- CORRIGIDO
+    world->addChild(camera);
+    // Posição da câmera
+    camera->set(cVector3d(1.5, 0.0, 0.8),    // Mantendo a câmera de antes
+                cVector3d(0.0, 0.0, 0.0),    // Olhando para a origem
+                cVector3d(0.0, 0.0, 1.0));
+    camera->setFieldViewAngleDeg(45.0);
+    camera->setClippingPlanes(0.01, 10.0);
+    // Luz
+    cPositionalLight* light = new cPositionalLight(world);
     world->addChild(light);
-    light->setEnabled(true);                   // Habilita a luz
-    light->setLocalPos(2.0, 3.0, 4.0);      // Define a posição da luz
-    // light->setDir(cVector3d(-1.0, -1.0, -1.0)); // <--- REMOVIDO/COMENTADO (não essencial para CPositionalLight)
-
-    // Configurar propriedades de renderização OpenGL (CHAI3D pode sobrescrever algumas)
+    light->setEnabled(true);
+    light->setLocalPos(2.0, 3.0, 4.0);
+    // Configs GL
     glEnable(GL_DEPTH_TEST);
-    glEnable(GL_LIGHTING); // Habilita iluminação (CHAI3D usa iluminação GL legada)
-    glEnable(GL_LIGHT0);   // Habilita a luz (CHAI3D mapeia cLight para luzes GL, geralmente começa com LIGHT0)
-    glClearColor(0.2f, 0.3f, 0.4f, 1.0f); // Cor de fundo um pouco diferente
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glClearColor(0.2f, 0.3f, 0.4f, 1.0f);
 
-    // Loop de renderização
+
+    // --- Objetos da Cena ---
+    // Esfera de interação (em metros)
+    cShapeSphere* interactionSphere = new cShapeSphere(0.1); // Raio 10cm
+    interactionSphere->m_material->setRedFireBrick();
+    world->addChild(interactionSphere);
+    // Posição da esfera (ex: 0.5 no eixo X)
+    interactionSphere->setLocalPos(0.5, 0.0, 0.0);
+
+    // Cursor visual (esfera branca)
+    cShapeSphere* hapticCursor = new cShapeSphere(0.015); // Raio 1.5cm
+    world->addChild(hapticCursor);
+    hapticCursor->m_material->setWhite();
+    hapticCursor->setUseMaterial(true);
+    hapticCursor->setUseTransparency(false);
+
+
+    // --- Inicialização Háptica ---
+    if (!Haptics::startHaptics()) {
+        std::cerr << "MAIN: Failed to start haptics thread. Exiting." << std::endl;
+        delete world; glfwDestroyWindow(window); glfwTerminate(); return -1;
+    }
+    // Espera Inteligente
+    std::cout << "MAIN: Waiting for haptic device to become ready..." << std::endl;
+    bool deviceReady = false;
+    std::chrono::steady_clock::time_point startTime = std::chrono::steady_clock::now();
+    std::chrono::seconds timeout(5);
+    while (std::chrono::steady_clock::now() - startTime < timeout) {
+        if (Haptics::hapticDeviceReady.load()) { deviceReady = true; break; }
+        if (!Haptics::simulationRunning.load()) { std::cerr << "MAIN: Haptics thread indicated an early stop during initialization." << std::endl; break; }
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
+    }
+    if (!deviceReady) {
+        if (Haptics::simulationRunning.load()) { std::cerr << "MAIN: Timeout waiting for haptic device. Exiting." << std::endl; }
+        else { std::cerr << "MAIN: Haptic device failed to initialize (check haptics thread logs). Exiting." << std::endl; }
+        Haptics::stopHaptics();
+        delete world; glfwDestroyWindow(window); glfwTerminate(); return -1;
+    }
+    std::cout << "MAIN: Haptic device is ready!" << std::endl;
+
+
+    // --- Loop Principal de Renderização e Lógica ---
     while (!glfwWindowShouldClose(window)) {
-        // ... (código do loop de renderização igual a antes) ...
-        // Obter tamanho do framebuffer (pode mudar se a janela for redimensionada)
         int width, height;
         glfwGetFramebufferSize(window, &width, &height);
 
-        // Definir viewport CADA frame para lidar com redimensionamento
-        if (width > 0 && height > 0) { // Evita divisão por zero se minimizado
+        // --- Atualizações Lógicas ---
+
+        // 1. Obter a posição REAL do dispositivo (em metros)
+        cVector3d devicePos = Haptics::getDevicePosition();
+
+        // 2. ****** REINTRODUZIDO: Aplicar escala APENAS para o cursor VISUAL ******
+        //    Multiplica a posição real pelo fator de escala para ampliar o movimento visual.
+        cVector3d visualCursorPos = devicePos * workspaceScaleFactor; // Usa o fator de escala (ex: 3.0)
+        hapticCursor->setLocalPos(visualCursorPos); // Define a posição do cursor visual com a escala
+        // **************************************************************************
+
+        // 3. Informar à thread háptica a posição/raio da esfera (em metros, SEM escala)
+        //    A física háptica SEMPRE usa as coordenadas reais do mundo.
+        Haptics::setSphereProperties(interactionSphere->getGlobalPos(), interactionSphere->getRadius());
+
+
+        // --- Renderização ---
+        if (width > 0 && height > 0) {
             glViewport(0, 0, width, height);
-
-            // Limpar buffers
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-            // Renderizar a cena vista pela câmera
-            // Passar width e height atualizados!
+            // Renderiza a cena
             camera->renderView(width, height);
-
-            // Trocar buffers (mostrar o que foi desenhado)
             glfwSwapBuffers(window);
         }
-
-        // Processar eventos (teclado, mouse, etc.)
         glfwPollEvents();
     }
 
-    // --- Limpeza ---
-
-    // Deletar o mundo CHAI3D (isso deve deletar a câmera, esfera e luz adicionadas como filhas)
+    // --- Limpeza Final ---
+    std::cout << "MAIN: Exiting application..." << std::endl;
+    Haptics::stopHaptics();
     delete world;
-    world = nullptr; // Boa prática após delete
-
-    // Limpeza GLFW
+    world = nullptr;
     glfwDestroyWindow(window);
     glfwTerminate();
+    std::cout << "MAIN: Cleanup complete." << std::endl;
 
     return 0;
 }
