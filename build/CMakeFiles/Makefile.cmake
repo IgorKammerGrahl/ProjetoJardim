@@ -99,6 +99,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake-3.28/Modules/FindGLEW.cmake"
+  "/usr/share/cmake-3.28/Modules/FindOpenGL.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake"
@@ -131,5 +132,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/imgui.dir/DependInfo.cmake"
+  "CMakeFiles/imgui_impl_glfw.dir/DependInfo.cmake"
+  "CMakeFiles/imgui_impl_opengl3.dir/DependInfo.cmake"
   "CMakeFiles/MeuProjetoChai3D.dir/DependInfo.cmake"
   )

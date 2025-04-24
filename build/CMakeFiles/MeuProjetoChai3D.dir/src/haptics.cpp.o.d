@@ -19,7 +19,7 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/stdlib.h \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -84,11 +84,11 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/stl_iterator.h \
  /usr/include/c++/13/bits/ptr_traits.h /usr/include/c++/13/debug/debug.h \
- /usr/include/c++/13/bits/predefined_ops.h \
+ /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
  /usr/include/c++/13/ext/alloc_traits.h \
  /usr/include/c++/13/bits/alloc_traits.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bit \
+ /usr/include/c++/13/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -140,6 +140,8 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen/Eigen/Eigen \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen/Eigen/Dense \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen/Eigen/Core \
@@ -155,8 +157,21 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/sstream /usr/include/c++/13/istream \
- /usr/include/c++/13/ios /usr/include/c++/13/bits/char_traits.h \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
+ /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/istream /usr/include/c++/13/ios \
+ /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
  /usr/include/c++/13/clocale /usr/include/locale.h \
@@ -167,7 +182,8 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/c++/13/bits/cxxabi_forced.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/initializer_list \
- /usr/include/c++/13/bits/basic_string.h \
+ /usr/include/c++/13/bits/basic_string.h /usr/include/c++/13/string_view \
+ /usr/include/c++/13/bits/string_view.tcc \
  /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -183,6 +199,8 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
+ /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/include/c++/13/bits/uses_allocator_args.h \
  /usr/include/c++/13/bits/locale_classes.tcc \
  /usr/include/c++/13/system_error \
  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
@@ -204,10 +222,23 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
- /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstddef \
- /usr/include/c++/13/cassert /usr/include/assert.h \
- /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/limits /usr/include/c++/13/climits \
+ /usr/include/c++/13/stdlib.h /usr/include/c++/13/cassert \
+ /usr/include/assert.h /usr/include/c++/13/functional \
+ /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/array \
+ /usr/include/c++/13/compare /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h /usr/include/c++/13/climits \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -216,10 +247,8 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen/Eigen/src/Core/util/Constants.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen/Eigen/src/Core/util/ForwardDeclarations.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/external/Eigen/Eigen/src/Core/util/Meta.h \
@@ -391,9 +420,6 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/audio/CAudioDevice.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/audio/CAudioBuffer.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/audio/CAudioSource.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/audio/CAudioSource.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/devices/CGenericDevice.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/devices/CGenericHapticDevice.h \
@@ -457,7 +483,6 @@ CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/materials/CGenericTexture.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/materials/CMaterial.h \
  /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/src/materials/CNormalMap.h \

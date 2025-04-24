@@ -112,6 +112,12 @@ MeuProjetoChai3D: /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/lib/release/lin
 MeuProjetoChai3D: /home/igor/sdk-3.17.6/lib/release/lin-x86_64-gcc/libdhd.a
 MeuProjetoChai3D: /home/igor/sdk-3.17.6/lib/release/lin-x86_64-gcc/libdrd.a
 MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libGLEW.so
+MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libGL.so
+MeuProjetoChai3D: libimgui.a
+MeuProjetoChai3D: libimgui_impl_glfw.a
+MeuProjetoChai3D: libimgui_impl_opengl3.a
+MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libGL.so
+MeuProjetoChai3D: libimgui.a
 MeuProjetoChai3D: CMakeFiles/MeuProjetoChai3D.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MeuProjetoChai3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MeuProjetoChai3D.dir/link.txt --verbose=$(VERBOSE)

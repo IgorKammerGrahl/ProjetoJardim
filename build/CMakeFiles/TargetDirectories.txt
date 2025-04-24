@@ -1,3 +1,6 @@
+/home/igor/MeuProjetoChai3d/build/CMakeFiles/imgui.dir
+/home/igor/MeuProjetoChai3d/build/CMakeFiles/imgui_impl_glfw.dir
+/home/igor/MeuProjetoChai3d/build/CMakeFiles/imgui_impl_opengl3.dir
 /home/igor/MeuProjetoChai3d/build/CMakeFiles/MeuProjetoChai3D.dir
 /home/igor/MeuProjetoChai3d/build/CMakeFiles/edit_cache.dir
 /home/igor/MeuProjetoChai3d/build/CMakeFiles/rebuild_cache.dir

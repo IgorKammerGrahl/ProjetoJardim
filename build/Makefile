@@ -117,6 +117,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
+# Target rules for targets named imgui_impl_glfw
+
+# Build rule for target.
+imgui_impl_glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_impl_glfw
+.PHONY : imgui_impl_glfw
+
+# fast build rule for target.
+imgui_impl_glfw/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_glfw.dir/build.make CMakeFiles/imgui_impl_glfw.dir/build
+.PHONY : imgui_impl_glfw/fast
+
+#=============================================================================
+# Target rules for targets named imgui_impl_opengl3
+
+# Build rule for target.
+imgui_impl_opengl3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_impl_opengl3
+.PHONY : imgui_impl_opengl3
+
+# fast build rule for target.
+imgui_impl_opengl3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_opengl3.dir/build.make CMakeFiles/imgui_impl_opengl3.dir/build
+.PHONY : imgui_impl_opengl3/fast
+
+#=============================================================================
 # Target rules for targets named MeuProjetoChai3D
 
 # Build rule for target.
@@ -128,6 +167,174 @@ MeuProjetoChai3D: cmake_check_build_system
 MeuProjetoChai3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/build
 .PHONY : MeuProjetoChai3D/fast
+
+extern/imgui/backends/imgui_impl_glfw.o: extern/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : extern/imgui/backends/imgui_impl_glfw.o
+
+# target to build an object file
+extern/imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_glfw.dir/build.make CMakeFiles/imgui_impl_glfw.dir/extern/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : extern/imgui/backends/imgui_impl_glfw.cpp.o
+
+extern/imgui/backends/imgui_impl_glfw.i: extern/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : extern/imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+extern/imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_glfw.dir/build.make CMakeFiles/imgui_impl_glfw.dir/extern/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : extern/imgui/backends/imgui_impl_glfw.cpp.i
+
+extern/imgui/backends/imgui_impl_glfw.s: extern/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : extern/imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+extern/imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_glfw.dir/build.make CMakeFiles/imgui_impl_glfw.dir/extern/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : extern/imgui/backends/imgui_impl_glfw.cpp.s
+
+extern/imgui/backends/imgui_impl_opengl3.o: extern/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : extern/imgui/backends/imgui_impl_opengl3.o
+
+# target to build an object file
+extern/imgui/backends/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_opengl3.dir/build.make CMakeFiles/imgui_impl_opengl3.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : extern/imgui/backends/imgui_impl_opengl3.cpp.o
+
+extern/imgui/backends/imgui_impl_opengl3.i: extern/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : extern/imgui/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+extern/imgui/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_opengl3.dir/build.make CMakeFiles/imgui_impl_opengl3.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : extern/imgui/backends/imgui_impl_opengl3.cpp.i
+
+extern/imgui/backends/imgui_impl_opengl3.s: extern/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : extern/imgui/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+extern/imgui/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_impl_opengl3.dir/build.make CMakeFiles/imgui_impl_opengl3.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : extern/imgui/backends/imgui_impl_opengl3.cpp.s
+
+extern/imgui/imgui.o: extern/imgui/imgui.cpp.o
+.PHONY : extern/imgui/imgui.o
+
+# target to build an object file
+extern/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.o
+.PHONY : extern/imgui/imgui.cpp.o
+
+extern/imgui/imgui.i: extern/imgui/imgui.cpp.i
+.PHONY : extern/imgui/imgui.i
+
+# target to preprocess a source file
+extern/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.i
+.PHONY : extern/imgui/imgui.cpp.i
+
+extern/imgui/imgui.s: extern/imgui/imgui.cpp.s
+.PHONY : extern/imgui/imgui.s
+
+# target to generate assembly for a file
+extern/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.s
+.PHONY : extern/imgui/imgui.cpp.s
+
+extern/imgui/imgui_demo.o: extern/imgui/imgui_demo.cpp.o
+.PHONY : extern/imgui/imgui_demo.o
+
+# target to build an object file
+extern/imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o
+.PHONY : extern/imgui/imgui_demo.cpp.o
+
+extern/imgui/imgui_demo.i: extern/imgui/imgui_demo.cpp.i
+.PHONY : extern/imgui/imgui_demo.i
+
+# target to preprocess a source file
+extern/imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.i
+.PHONY : extern/imgui/imgui_demo.cpp.i
+
+extern/imgui/imgui_demo.s: extern/imgui/imgui_demo.cpp.s
+.PHONY : extern/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+extern/imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.s
+.PHONY : extern/imgui/imgui_demo.cpp.s
+
+extern/imgui/imgui_draw.o: extern/imgui/imgui_draw.cpp.o
+.PHONY : extern/imgui/imgui_draw.o
+
+# target to build an object file
+extern/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.o
+.PHONY : extern/imgui/imgui_draw.cpp.o
+
+extern/imgui/imgui_draw.i: extern/imgui/imgui_draw.cpp.i
+.PHONY : extern/imgui/imgui_draw.i
+
+# target to preprocess a source file
+extern/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.i
+.PHONY : extern/imgui/imgui_draw.cpp.i
+
+extern/imgui/imgui_draw.s: extern/imgui/imgui_draw.cpp.s
+.PHONY : extern/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+extern/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.s
+.PHONY : extern/imgui/imgui_draw.cpp.s
+
+extern/imgui/imgui_tables.o: extern/imgui/imgui_tables.cpp.o
+.PHONY : extern/imgui/imgui_tables.o
+
+# target to build an object file
+extern/imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.o
+.PHONY : extern/imgui/imgui_tables.cpp.o
+
+extern/imgui/imgui_tables.i: extern/imgui/imgui_tables.cpp.i
+.PHONY : extern/imgui/imgui_tables.i
+
+# target to preprocess a source file
+extern/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.i
+.PHONY : extern/imgui/imgui_tables.cpp.i
+
+extern/imgui/imgui_tables.s: extern/imgui/imgui_tables.cpp.s
+.PHONY : extern/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+extern/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.s
+.PHONY : extern/imgui/imgui_tables.cpp.s
+
+extern/imgui/imgui_widgets.o: extern/imgui/imgui_widgets.cpp.o
+.PHONY : extern/imgui/imgui_widgets.o
+
+# target to build an object file
+extern/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.o
+.PHONY : extern/imgui/imgui_widgets.cpp.o
+
+extern/imgui/imgui_widgets.i: extern/imgui/imgui_widgets.cpp.i
+.PHONY : extern/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+extern/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.i
+.PHONY : extern/imgui/imgui_widgets.cpp.i
+
+extern/imgui/imgui_widgets.s: extern/imgui/imgui_widgets.cpp.s
+.PHONY : extern/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+extern/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.s
+.PHONY : extern/imgui/imgui_widgets.cpp.s
 
 src/haptics.o: src/haptics.cpp.o
 .PHONY : src/haptics.o
@@ -186,6 +393,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MeuProjetoChai3D"
+	@echo "... imgui"
+	@echo "... imgui_impl_glfw"
+	@echo "... imgui_impl_opengl3"
+	@echo "... extern/imgui/backends/imgui_impl_glfw.o"
+	@echo "... extern/imgui/backends/imgui_impl_glfw.i"
+	@echo "... extern/imgui/backends/imgui_impl_glfw.s"
+	@echo "... extern/imgui/backends/imgui_impl_opengl3.o"
+	@echo "... extern/imgui/backends/imgui_impl_opengl3.i"
+	@echo "... extern/imgui/backends/imgui_impl_opengl3.s"
+	@echo "... extern/imgui/imgui.o"
+	@echo "... extern/imgui/imgui.i"
+	@echo "... extern/imgui/imgui.s"
+	@echo "... extern/imgui/imgui_demo.o"
+	@echo "... extern/imgui/imgui_demo.i"
+	@echo "... extern/imgui/imgui_demo.s"
+	@echo "... extern/imgui/imgui_draw.o"
+	@echo "... extern/imgui/imgui_draw.i"
+	@echo "... extern/imgui/imgui_draw.s"
+	@echo "... extern/imgui/imgui_tables.o"
+	@echo "... extern/imgui/imgui_tables.i"
+	@echo "... extern/imgui/imgui_tables.s"
+	@echo "... extern/imgui/imgui_widgets.o"
+	@echo "... extern/imgui/imgui_widgets.i"
+	@echo "... extern/imgui/imgui_widgets.s"
 	@echo "... src/haptics.o"
 	@echo "... src/haptics.i"
 	@echo "... src/haptics.s"

@@ -1,8 +1,9 @@
-sudo chmod 777 inicializador.sh
+chmod +x inicializador.sh
 
 sudo apt update
-sudo apt install build-essential cmake pkg-config libglfw3-dev libglew-dev libglu1-mesa-dev libx11-dev
-
+sudo apt install build-essential cmake pkg-config git \
+     libglfw3-dev libglew-dev libglu1-mesa-dev libx11-dev
+     
 echo "Inicializando o Jardim"
 
 rm -rf build/
