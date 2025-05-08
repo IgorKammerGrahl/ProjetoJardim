@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o"
-  "CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o.d"
+  "CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o"
+  "CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o.d"
+  "CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o"
+  "CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o.d"
   "CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.o"
   "CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.o.d"
   "MeuProjetoChai3D"

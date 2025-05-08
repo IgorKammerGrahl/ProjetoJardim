@@ -336,29 +336,53 @@ extern/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.s
 .PHONY : extern/imgui/imgui_widgets.cpp.s
 
-src/haptics.o: src/haptics.cpp.o
-.PHONY : src/haptics.o
+src/config_parser.o: src/config_parser.cpp.o
+.PHONY : src/config_parser.o
 
 # target to build an object file
-src/haptics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o
-.PHONY : src/haptics.cpp.o
+src/config_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o
+.PHONY : src/config_parser.cpp.o
 
-src/haptics.i: src/haptics.cpp.i
-.PHONY : src/haptics.i
+src/config_parser.i: src/config_parser.cpp.i
+.PHONY : src/config_parser.i
 
 # target to preprocess a source file
-src/haptics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.i
-.PHONY : src/haptics.cpp.i
+src/config_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.i
+.PHONY : src/config_parser.cpp.i
 
-src/haptics.s: src/haptics.cpp.s
-.PHONY : src/haptics.s
+src/config_parser.s: src/config_parser.cpp.s
+.PHONY : src/config_parser.s
 
 # target to generate assembly for a file
-src/haptics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.s
-.PHONY : src/haptics.cpp.s
+src/config_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.s
+.PHONY : src/config_parser.cpp.s
+
+src/haptic_simulator.o: src/haptic_simulator.cpp.o
+.PHONY : src/haptic_simulator.o
+
+# target to build an object file
+src/haptic_simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o
+.PHONY : src/haptic_simulator.cpp.o
+
+src/haptic_simulator.i: src/haptic_simulator.cpp.i
+.PHONY : src/haptic_simulator.i
+
+# target to preprocess a source file
+src/haptic_simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.i
+.PHONY : src/haptic_simulator.cpp.i
+
+src/haptic_simulator.s: src/haptic_simulator.cpp.s
+.PHONY : src/haptic_simulator.s
+
+# target to generate assembly for a file
+src/haptic_simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MeuProjetoChai3D.dir/build.make CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.s
+.PHONY : src/haptic_simulator.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -417,9 +441,12 @@ help:
 	@echo "... extern/imgui/imgui_widgets.o"
 	@echo "... extern/imgui/imgui_widgets.i"
 	@echo "... extern/imgui/imgui_widgets.s"
-	@echo "... src/haptics.o"
-	@echo "... src/haptics.i"
-	@echo "... src/haptics.s"
+	@echo "... src/config_parser.o"
+	@echo "... src/config_parser.i"
+	@echo "... src/config_parser.s"
+	@echo "... src/haptic_simulator.o"
+	@echo "... src/haptic_simulator.i"
+	@echo "... src/haptic_simulator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

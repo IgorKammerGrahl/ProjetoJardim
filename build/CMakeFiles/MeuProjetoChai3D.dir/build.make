@@ -83,43 +83,57 @@ CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igor/MeuProjetoChai3d/src/main.cpp -o CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.s
 
-CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: CMakeFiles/MeuProjetoChai3D.dir/flags.make
-CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: /home/igor/MeuProjetoChai3d/src/haptics.cpp
-CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o: CMakeFiles/MeuProjetoChai3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o -MF CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o.d -o CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o -c /home/igor/MeuProjetoChai3d/src/haptics.cpp
+CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o: CMakeFiles/MeuProjetoChai3D.dir/flags.make
+CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o: /home/igor/MeuProjetoChai3d/src/config_parser.cpp
+CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o: CMakeFiles/MeuProjetoChai3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o -MF CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o.d -o CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o -c /home/igor/MeuProjetoChai3d/src/config_parser.cpp
 
-CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igor/MeuProjetoChai3d/src/haptics.cpp > CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.i
+CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igor/MeuProjetoChai3d/src/config_parser.cpp > CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.i
 
-CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igor/MeuProjetoChai3d/src/haptics.cpp -o CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.s
+CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igor/MeuProjetoChai3d/src/config_parser.cpp -o CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.s
+
+CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o: CMakeFiles/MeuProjetoChai3D.dir/flags.make
+CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o: /home/igor/MeuProjetoChai3d/src/haptic_simulator.cpp
+CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o: CMakeFiles/MeuProjetoChai3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o -MF CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o.d -o CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o -c /home/igor/MeuProjetoChai3d/src/haptic_simulator.cpp
+
+CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igor/MeuProjetoChai3d/src/haptic_simulator.cpp > CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.i
+
+CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igor/MeuProjetoChai3d/src/haptic_simulator.cpp -o CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.s
 
 # Object files for target MeuProjetoChai3D
 MeuProjetoChai3D_OBJECTS = \
 "CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.o" \
-"CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o"
+"CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o" \
+"CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o"
 
 # External object files for target MeuProjetoChai3D
 MeuProjetoChai3D_EXTERNAL_OBJECTS =
 
 MeuProjetoChai3D: CMakeFiles/MeuProjetoChai3D.dir/src/main.cpp.o
-MeuProjetoChai3D: CMakeFiles/MeuProjetoChai3D.dir/src/haptics.cpp.o
+MeuProjetoChai3D: CMakeFiles/MeuProjetoChai3D.dir/src/config_parser.cpp.o
+MeuProjetoChai3D: CMakeFiles/MeuProjetoChai3D.dir/src/haptic_simulator.cpp.o
 MeuProjetoChai3D: CMakeFiles/MeuProjetoChai3D.dir/build.make
-MeuProjetoChai3D: /home/igor/chai3d-3.2.0-Makefiles/chai3d-3.2.0/lib/release/lin-x86_64-cc/libchai3d.a
-MeuProjetoChai3D: /home/igor/sdk-3.17.6/lib/release/lin-x86_64-gcc/libdhd.a
-MeuProjetoChai3D: /home/igor/sdk-3.17.6/lib/release/lin-x86_64-gcc/libdrd.a
 MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libGLEW.so
-MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libGL.so
 MeuProjetoChai3D: libimgui.a
 MeuProjetoChai3D: libimgui_impl_glfw.a
 MeuProjetoChai3D: libimgui_impl_opengl3.a
-MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libGL.so
+MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
+MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libGLX.so
+MeuProjetoChai3D: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 MeuProjetoChai3D: libimgui.a
 MeuProjetoChai3D: CMakeFiles/MeuProjetoChai3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MeuProjetoChai3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MeuProjetoChai3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MeuProjetoChai3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

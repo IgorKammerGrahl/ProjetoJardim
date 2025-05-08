@@ -1,0 +1,16 @@
+{
+    "games": [
+        {
+            "executable": "01-mydevice",
+            "subject": "Introdução",
+            "skills": ["Controle Básico", "Calibração"],
+            "description": "Configuração inicial do dispositivo háptico"
+        },
+        {
+            "executable": "06-images",
+            "subject": "Artes",
+            "skills": ["Coordenação Visual", "Precisão"],
+            "description": "Manipulação de imagens 3D"
+        }
+    ]
+}
