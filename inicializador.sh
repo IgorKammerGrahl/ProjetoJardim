@@ -146,6 +146,14 @@ prepare_build() {
     echo "🧹 Limpando builds anteriores..."
     rm -rf "${BUILD_DIR}"
     mkdir -p "${BUILD_DIR}"
+    
+    # Adicione aqui ↓
+    if [ -d "${PROJECT_DIR}/fonts" ]; then
+    	mkdir -p "${BUILD_DIR}/fonts"
+        cp -r "${PROJECT_DIR}/fonts" "${BUILD_DIR}/fonts"
+    else
+        handle_error "Diretório de fontes não encontrado em: ${PROJECT_DIR}/fonts"
+    fi
 }
 
 # Função para verificar e copiar configurações
@@ -169,7 +177,7 @@ build_project() {
     local build_type="Release"
     local haptic_flag="-DDISABLE_HAPTICS=$DISABLE_HAPTICS"
     
-    cmake -DCMAKE_BUILD_TYPE="${build_type}" "${haptic_flag}" .. || handle_error "Falha na configuração CMake"
+    cmake -DCMAKE_BUILD_TYPE="${build_type}" -DDISABLE_HAPTICS=$DISABLE_HAPTICS .. || handle_error "Falha na configuração CMake"
     make -j"$(nproc)" || handle_error "Falha na compilação"
     
     handle_config  # Garantir que o arquivo de configuração está no build

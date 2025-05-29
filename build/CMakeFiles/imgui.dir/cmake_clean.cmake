@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.o"
   "CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.o.d"
-  "CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o"
-  "CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o.d"
   "CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.o"
   "CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.o.d"
   "CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.o"

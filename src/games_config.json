@@ -1,16 +1,196 @@
 {
-    "games": [
-        {
-            "executable": "01-mydevice",
-            "subject": "Introdução",
-            "skills": ["Controle Básico", "Calibração"],
-            "description": "Configuração inicial do dispositivo háptico"
-        },
-        {
-            "executable": "06-images",
-            "subject": "Artes",
-            "skills": ["Coordenação Visual", "Precisão"],
-            "description": "Manipulação de imagens 3D"
-        }
-    ]
+  "games": [
+    {
+      "executable": "01-mydevice",
+      "subject": "Introdução ao Hardware",
+      "skills": ["Conexão", "Calibração", "Feedback Tátil Básico"],
+      "description": "Configuração e reconhecimento inicial do dispositivo háptico."
+    },
+    {
+      "executable": "02-multi-devices",
+      "subject": "Coordenação Avançada",
+      "skills": ["Multi-tarefa", "Sincronização", "Consciência Espacial"],
+      "description": "Controla múltiplos dispositivos, útil para tarefas cooperativas (se aplicável)."
+    },
+    {
+      "executable": "03-analytics",
+      "subject": "Análise e Desempenho",
+      "skills": ["Coleta de Dados", "Observação", "Métricas de Interação"],
+      "description": "Ferramentas para observar e analisar a interação com o dispositivo (mais para o professor)."
+    },
+    {
+      "executable": "04-shapes",
+      "subject": "Geometria e Formas",
+      "skills": ["Reconhecimento de Formas", "Manipulação 3D", "Percepção Espacial"],
+      "description": "Exploração e manipulação de formas geométricas básicas em 3D."
+    },
+    {
+      "executable": "05-fonts",
+      "subject": "Linguagem e Textos",
+      "skills": ["Reconhecimento de Letras", "Leitura Tátil", "Renderização de Texto"],
+      "description": "Visualização e interação com texto renderizado em 3D."
+    },
+    {
+      "executable": "06-images",
+      "subject": "Artes Visuais e Percepção",
+      "skills": ["Coordenação Olho-Mão", "Percepção de Profundidade", "Interação com Imagens"],
+      "description": "Manipulação e exploração de imagens em um ambiente 3D."
+    },
+    {
+      "executable": "07-mouse-select",
+      "subject": "Interação e Interface",
+      "skills": ["Seleção de Objetos", "Causa e Efeito", "Apontar e Clicar (análogo)"],
+      "description": "Demonstra a seleção de objetos, similar à interação com mouse."
+    },
+    {
+      "executable": "08-shaders",
+      "subject": "Efeitos Visuais",
+      "skills": ["Percepção Visual", "Observação de Efeitos", "Renderização Avançada"],
+      "description": "Explora efeitos visuais complexos (mais demonstrativo)."
+    },
+    {
+      "executable": "09-magnets",
+      "subject": "Ciências (Física)",
+      "skills": ["Compreensão de Forças", "Causa e Efeito", "Interação Indireta"],
+      "description": "Simulação de atração e repulsão magnética com feedback tátil."
+    },
+    {
+      "executable": "10-oring",
+      "subject": "Mecânica e Materiais",
+      "skills": ["Percepção de Elasticidade", "Deformação", "Forças de Contato"],
+      "description": "Simulação de um anel elástico (O-ring) e suas propriedades."
+    },
+    {
+      "executable": "11-effects",
+      "subject": "Percepção Sensorial",
+      "skills": ["Feedback Tátil Variado", "Texturas Virtuais", "Efeitos de Força"],
+      "description": "Demonstração de diversos efeitos hápticos como viscosidade e vibração."
+    },
+    {
+      "executable": "12-polygons",
+      "subject": "Geometria Avançada",
+      "skills": ["Construção de Formas", "Manipulação de Vértices", "Modelagem 3D Básica"],
+      "description": "Criação e interação com polígonos e malhas 3D."
+    },
+    {
+      "executable": "13-primitives",
+      "subject": "Geometria Fundamental",
+      "skills": ["Reconhecimento de Primitivas", "Interação com Sólidos", "Blocos de Construção"],
+      "description": "Exploração de primitivas geométricas como esferas, cubos e cilindros."
+    },
+    {
+      "executable": "14-textures",
+      "subject": "Percepção Visual e Tátil",
+      "skills": ["Reconhecimento de Texturas", "Mapeamento Visual", "Superfícies"],
+      "description": "Aplicação de texturas visuais em objetos 3D, podendo simular texturas táteis."
+    },
+    {
+      "executable": "15-paint",
+      "subject": "Criatividade e Artes",
+      "skills": ["Coordenação Motora Fina", "Expressão Artística", "Cores e Formas"],
+      "description": "Ferramenta de pintura em um ambiente 3D com feedback háptico."
+    },
+    {
+      "executable": "16-friction",
+      "subject": "Ciências (Física)",
+      "skills": ["Percepção de Atrito", "Forças de Superfície", "Interação Realista"],
+      "description": "Simulação de atrito entre superfícies com feedback tátil."
+    },
+    {
+      "executable": "17-shading",
+      "subject": "Percepção Visual",
+      "skills": ["Compreensão de Luz e Sombra", "Volume e Profundidade", "Realismo Visual"],
+      "description": "Demonstra diferentes modelos de sombreamento em objetos 3D."
+    },
+    {
+      "executable": "18-endoscope",
+      "subject": "Exploração e Navegação",
+      "skills": ["Navegação em Espaços Restritos", "Coordenação Fina", "Percepção Espacial"],
+      "description": "Simula a navegação de um endoscópio em um ambiente virtual."
+    },
+    {
+      "executable": "19-space",
+      "subject": "Navegação e Interação",
+      "skills": ["Controle de Voo Livre", "Orientação Espacial", "Interação em Grandes Ambientes"],
+      "description": "Navegação livre em um ambiente espacial 3D com um cursor háptico."
+    },
+    {
+      "executable": "20-map",
+      "subject": "Orientação e Geografia",
+      "skills": ["Leitura de Mapas (Tátil)", "Navegação Guiada", "Localização"],
+      "description": "Interação com um mapa, possivelmente para navegação ou exploração de relevo."
+    },
+    {
+      "executable": "21-object",
+      "subject": "Manipulação de Objetos",
+      "skills": ["Agarre e Soltura", "Rotação e Translação", "Propriedades Físicas (Peso, Inércia)"],
+      "description": "Manipulação detalhada de um objeto 3D com o dispositivo háptico."
+    },
+    {
+      "executable": "22-chrome",
+      "subject": "Percepção Visual e Materiais",
+      "skills": ["Reflexos", "Propriedades de Materiais", "Observação Detalhada"],
+      "description": "Demonstração de materiais reflexivos como cromo."
+    },
+    {
+      "executable": "23-tooth",
+      "subject": "Biologia/Anatomia (Adaptado)",
+      "skills": ["Exploração de Estruturas Complexas", "Percepção de Contornos", "Simulação Médica Básica"],
+      "description": "Exploração de um modelo de dente, útil para entender formas complexas."
+    },
+    {
+      "executable": "24-turntable",
+      "subject": "Observação e Controle",
+      "skills": ["Rotação Controlada", "Inspeção de Objetos", "Visualização 360°"],
+      "description": "Permite girar e observar um objeto em uma plataforma giratória virtual."
+    },
+    {
+      "executable": "25-sounds",
+      "subject": "Percepção Auditiva e Multissensorial",
+      "skills": ["Associação Som-Ação", "Feedback Auditivo", "Interação Multimodal"],
+      "description": "Integração de sons com interações hápticas."
+    },
+    {
+      "executable": "26-video",
+      "subject": "Mídia Interativa",
+      "skills": ["Integração de Mídia", "Controle de Reprodução (Potencial)", "Observação"],
+      "description": "Demonstra a reprodução de vídeo em um ambiente 3D."
+    },
+    {
+      "executable": "27-multiframes",
+      "subject": "Organização Espacial",
+      "skills": ["Múltiplas Visões", "Gerenciamento de Quadros", "Consciência de Contexto"],
+      "description": "Interação com múltiplos quadros de referência ou visualizações."
+    },
+    {
+      "executable": "28-voxel-basic",
+      "subject": "Construção e Modelagem",
+      "skills": ["Blocos de Construção (Voxels)", "Criatividade Espacial", "Modificação de Volume"],
+      "description": "Criação e manipulação básica de estruturas com voxels (pixels 3D)."
+    },
+    {
+      "executable": "29-voxel-isosurface",
+      "subject": "Visualização de Dados e Formas Orgânicas",
+      "skills": ["Extração de Superfícies", "Percepção de Formas Complexas", "Dados Volumétricos"],
+      "description": "Cria isosuperfícies a partir de dados voxel, criando formas suaves."
+    },
+    {
+      "executable": "30-voxel-colormap",
+      "subject": "Visualização de Dados",
+      "skills": ["Interpretação de Cores", "Dados Mapeados", "Análise Visual"],
+      "description": "Aplica mapas de cores a dados voxel para visualização."
+    },
+    {
+      "executable": "31-pointcloud",
+      "subject": "Processamento de Dados 3D",
+      "skills": ["Navegação em Nuvem de Pontos", "Reconhecimento de Formas a Partir de Pontos", "Dados de Scan"],
+      "description": "Interação e visualização de nuvens de pontos 3D."
+    },
+    {
+      "executable": "cfont",
+      "subject": "Utilitários (Desenvolvedor)",
+      "skills": ["Teste de Fontes", "Recursos Gráficos"],
+      "description": "Utilitário ou exemplo de renderização de fontes (para desenvolvedores)."
+    }
+  ]
 }

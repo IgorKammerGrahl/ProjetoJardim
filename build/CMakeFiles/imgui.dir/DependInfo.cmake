@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/igor/MeuProjetoChai3d/extern/imgui/imgui.cpp" "CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.o" "gcc" "CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.o.d"
-  "/home/igor/MeuProjetoChai3d/extern/imgui/imgui_demo.cpp" "CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o" "gcc" "CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o.d"
   "/home/igor/MeuProjetoChai3d/extern/imgui/imgui_draw.cpp" "CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.o.d"
   "/home/igor/MeuProjetoChai3d/extern/imgui/imgui_tables.cpp" "CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.o.d"
   "/home/igor/MeuProjetoChai3d/extern/imgui/imgui_widgets.cpp" "CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.o.d"

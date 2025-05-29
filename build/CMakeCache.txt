@@ -236,6 +236,9 @@ GLEW_STATIC_LIBRARY_DEBUG:FILEPATH=GLEW_STATIC_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 GLEW_STATIC_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLEW.a
 
+//Include ImGui demo window sources
+IMGUI_INCLUDE_DEMO:BOOL=OFF
+
 //Path to a file.
 JSONCPP_INCLUDE_DIR:PATH=/usr/include/jsoncpp
 

@@ -240,30 +240,6 @@ extern/imgui/imgui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.s
 .PHONY : extern/imgui/imgui.cpp.s
 
-extern/imgui/imgui_demo.o: extern/imgui/imgui_demo.cpp.o
-.PHONY : extern/imgui/imgui_demo.o
-
-# target to build an object file
-extern/imgui/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o
-.PHONY : extern/imgui/imgui_demo.cpp.o
-
-extern/imgui/imgui_demo.i: extern/imgui/imgui_demo.cpp.i
-.PHONY : extern/imgui/imgui_demo.i
-
-# target to preprocess a source file
-extern/imgui/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.i
-.PHONY : extern/imgui/imgui_demo.cpp.i
-
-extern/imgui/imgui_demo.s: extern/imgui/imgui_demo.cpp.s
-.PHONY : extern/imgui/imgui_demo.s
-
-# target to generate assembly for a file
-extern/imgui/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.s
-.PHONY : extern/imgui/imgui_demo.cpp.s
-
 extern/imgui/imgui_draw.o: extern/imgui/imgui_draw.cpp.o
 .PHONY : extern/imgui/imgui_draw.o
 
@@ -429,9 +405,6 @@ help:
 	@echo "... extern/imgui/imgui.o"
 	@echo "... extern/imgui/imgui.i"
 	@echo "... extern/imgui/imgui.s"
-	@echo "... extern/imgui/imgui_demo.o"
-	@echo "... extern/imgui/imgui_demo.i"
-	@echo "... extern/imgui/imgui_demo.s"
 	@echo "... extern/imgui/imgui_draw.o"
 	@echo "... extern/imgui/imgui_draw.i"
 	@echo "... extern/imgui/imgui_draw.s"

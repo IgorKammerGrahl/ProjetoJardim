@@ -125,27 +125,12 @@ CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igor/MeuProjetoChai3d/extern/imgui/imgui_widgets.cpp -o CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.s
 
-CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o: CMakeFiles/imgui.dir/flags.make
-CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o: /home/igor/MeuProjetoChai3d/extern/imgui/imgui_demo.cpp
-CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o -MF CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o.d -o CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o -c /home/igor/MeuProjetoChai3d/extern/imgui/imgui_demo.cpp
-
-CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igor/MeuProjetoChai3d/extern/imgui/imgui_demo.cpp > CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.i
-
-CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igor/MeuProjetoChai3d/extern/imgui/imgui_demo.cpp -o CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.s
-
 # Object files for target imgui
 imgui_OBJECTS = \
 "CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.o" \
 "CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.o" \
 "CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.o" \
-"CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.o" \
-"CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o"
+"CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.o"
 
 # External object files for target imgui
 imgui_EXTERNAL_OBJECTS =
@@ -154,10 +139,9 @@ libimgui.a: CMakeFiles/imgui.dir/extern/imgui/imgui.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/extern/imgui/imgui_draw.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/extern/imgui/imgui_tables.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/extern/imgui/imgui_widgets.cpp.o
-libimgui.a: CMakeFiles/imgui.dir/extern/imgui/imgui_demo.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/build.make
 libimgui.a: CMakeFiles/imgui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libimgui.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/igor/MeuProjetoChai3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libimgui.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/imgui.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imgui.dir/link.txt --verbose=$(VERBOSE)
 
